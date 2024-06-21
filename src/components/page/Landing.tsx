@@ -12,12 +12,12 @@ interface Props {}
 
 const Hero: NextPage<Props> = ({}) => {
   return (
-    <div className="relative flex flex-col h-full w-full">
+    <div className="relative flex flex-col h-screen w-full">
       <video
         autoPlay
         muted
         loop
-        className="rotate-180 absolute top-[-340px] left-0 z-[1] w-full h-full object-cover"
+        className="rotate-180 absolute top-[-400px] left-0 z-[1] w-full h-full object-cover"
       >
         <source src="/blackhole.webm" type="video/webm" />
       </video>
@@ -28,11 +28,11 @@ const Hero: NextPage<Props> = ({}) => {
       >
         <div className="flex flex-col gap-5 justify-center h-full w-full m-auto text-start">
           <motion.div
-            variants={slideInFromTop}
+            variants={slideInFromTop(0.5)}
             className="Welcome-box py-[10px] px-[15px] border border-[#7042f88b] opacity-[0.9] "
           >
             <SparklesIcon className="text-[#b49bff] mr-[8px] h-5 w-10 " />
-            <h1 className="wWelcome-text text-[#ffffffbb] text-[15px] ">
+            <h1 className="Welcome-text text-[#ffffffbb] text-[15px] ">
               Full Stack Developer
             </h1>
           </motion.div>

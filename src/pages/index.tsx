@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Hero from '@/components/page/Hero'
+import Hero from '@/components/page/Landing'
+import Navbar from '@/components/common/Navbar'
 
 const Home: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
           content="Professional portfolio of [Joy James]"
         />
       </Head>
+      <Navbar />
       <main className="flex flex-col items-center justify-center min-h-screen py-2">
         <Hero />
       </main>
