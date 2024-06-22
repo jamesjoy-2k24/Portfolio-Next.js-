@@ -10,12 +10,12 @@ const Navbar: NextPage<Props> = ({}) => {
   return (
     <div>
       <motion.div initial="hidden" animate="visible">
-        <div className="bg-transparent backdrop-blur-3xl h-[70px] z-10 absolute text-white w-full flex justify-around items-center text-lg font-extrabold">
-          <motion.div variants={slideInFromTop(0.3)}>
+        <div className="bg-transparent backdrop-blur-3xl h-[70px] z-10 absolute text-gray-300 w-full flex justify-around items-center text-lg">
+          <motion.div variants={slideInFromTop(0.3)} className='text-white'>
             <div>James Joy</div>
           </motion.div>
           <div>
-            <motion.div className="flex gap-10">
+            <motion.div className="flex gap-10 bg-black bg-opacity-50 p-2 px-6 rounded-3xl">
               <motion.div variants={slideInFromTop(0.4)}>
                 <Link className="hover:text-white" href={'/'}>
                   Home
