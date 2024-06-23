@@ -1,15 +1,16 @@
-import { NextPage } from 'next'
-import { motion } from 'framer-motion'
+'use client';
+import { NextPage } from 'next';
+import { motion } from 'framer-motion';
 import {
   slideInFromLeft,
   slideInFromRight,
   slideInFromTop,
-} from '../../utils/motion'
-import { SparklesIcon } from '@heroicons/react/24/solid'
-import Image from 'next/image'
-import mainIcon from '../../../public/images/mainIconsdark.svg'
-interface Props {}
+} from '../../utils/motion';
+import { SparklesIcon } from '@heroicons/react/24/solid';
+import Image from 'next/image';
+import mainIcon from '../../../public/images/mainIconsdark.svg';
 
+interface Props {}
 const Hero: NextPage<Props> = ({}) => {
   return (
     <div className="relative flex flex-col h-screen w-full">
@@ -72,7 +73,7 @@ const Hero: NextPage<Props> = ({}) => {
         </motion.div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -1,8 +1,8 @@
-import { NextPage } from 'next'
-import { motion } from 'framer-motion'
-import { slideInFromTop } from '../../utils/motion'
-import { BsFacebook, BsInstagram, BsTwitterX, BsGithub } from 'react-icons/bs'
-import Link from 'next/link'
+import { NextPage } from 'next';
+import { motion } from 'framer-motion';
+import { slideInFromTop } from '../../utils/motion';
+import { BsFacebook, BsInstagram, BsTwitterX, BsGithub } from 'react-icons/bs';
+import Link from 'next/link';
 
 interface Props {}
 
@@ -10,12 +10,12 @@ const Navbar: NextPage<Props> = ({}) => {
   return (
     <div>
       <motion.div initial="hidden" animate="visible">
-        <div className="bg-transparent backdrop-blur-3xl h-[70px] z-10 absolute text-gray-300 w-full flex justify-around items-center text-lg">
-          <motion.div variants={slideInFromTop(0.3)} className='text-white'>
+        <div className="bg-transparent backdrop-blur-lg h-[70px] z-10 absolute text-gray-300 w-full flex justify-around items-center text-md">
+          <motion.div variants={slideInFromTop(0.3)} className="text-white">
             <div>James Joy</div>
           </motion.div>
           <div>
-            <motion.div className="flex gap-10 bg-black bg-opacity-50 p-2 px-6 rounded-3xl">
+            <motion.div className="flex gap-12 ml-[5rem] bg-black bg-opacity-40 p-2 px-6 rounded-3xl">
               <motion.div variants={slideInFromTop(0.4)}>
                 <Link className="hover:text-white" href={'/'}>
                   Home
@@ -55,7 +55,7 @@ const Navbar: NextPage<Props> = ({}) => {
         </div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -1,28 +1,19 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import '../styles/globals.css'
+import MainLayout from './mainLayout';
+import type { Metadata, Viewport } from 'next';
 
-const inter = Inter({ subsets: ['latin'] })
+export const viewport: Viewport = {
+  themeColor: '#030014',
+};
 
 export const metadata: Metadata = {
   title: 'Portfolio',
   description: 'This is my portfolio',
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={
-          '$(inter.className) bg-[#030014] overflow-y-scroll overflow-x-hidden'
-        }
-      >
-        {children}
-      </body>
-    </html>
-  )
+  return <MainLayout>{children}</MainLayout>;
 }

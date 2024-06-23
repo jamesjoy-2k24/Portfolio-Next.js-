@@ -1,4 +1,5 @@
-import { NextPage } from 'next'
+'use client';
+import { NextPage } from 'next';
 
 interface Props {}
 
@@ -7,7 +8,7 @@ const About: NextPage<Props> = ({}) => {
     <div className="text-white">
       <h1>About Me!</h1>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
