@@ -23,7 +23,7 @@ const Navbar = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="bg-transparent backdrop-blur-3xl h-[70px] text-gray-300 flex justify-between md:justify-around items-center md:px-10 px-6"
+        className="bg-transparent backdrop-blur-3xl h-[70px] text-gray-300 flex justify-between md:justify-around items-center px-10"
       >
         <motion.div
           variants={slideInFromTop(0.3)}
