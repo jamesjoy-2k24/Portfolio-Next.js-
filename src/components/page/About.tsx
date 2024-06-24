@@ -9,7 +9,7 @@ interface Props {}
 
 const About: NextPage<Props> = ({}) => {
   return (
-    <section className="flex flex-col w-full mb-[10rem]">
+    <section className="flex flex-col w-full mb-[2rem]">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -22,14 +22,14 @@ const About: NextPage<Props> = ({}) => {
           <Image
             src={profilePic}
             alt="Profile Picture"
-            className="rounded-full md:w-[500px] md:h-[500px] h-[300px] mt-[5rem] shadow-lg shadow-[#c054ff] object-cover mx-auto"
+            className="rounded-full md:w-[500px] md:h-[500px] h-[300px] mt-[5rem] mb-4 shadow-lg shadow-[#c054ff] object-cover mx-auto"
           />
         </motion.div>
         <motion.div
           variants={slideInFromRight(0.5)}
-          className="w-full md:w-1/2 text-center md:text-left"
+          className=" md:w-1/2 text-center md:text-left"
         >
-          <h2 className="text-4xl font-bold mb-6 text-white md:text-start text-center mt-4">
+          <h2 className="text-4xl font-bold mb-6 text-white md:text-start text-center mt-[3rem]">
             About Me
           </h2>
           <p className="md:text-xl text-lg text-gray-300 text-justify mb-4 max-w-[550px] gap-5">

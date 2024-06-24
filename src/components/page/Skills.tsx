@@ -3,6 +3,32 @@
 import { NextPage } from 'next';
 import { motion } from 'framer-motion';
 import { slideInFromLeft, slideInFromRight } from '../../utils/motion';
+import Image from 'next/image';
+
+// Photos
+import skill from '../../../public/images/next.png';
+import skill1 from '../../../public/images/html.png';
+import skill2 from '../../../public/images/css.png';
+import skill3 from '../../../public/images/node-js.png';
+import skill4 from '../../../public/images/react.png';
+import skill5 from '../../../public/images/graphql.png';
+import skill6 from '../../../public/images/js.png';
+import skill7 from '../../../public/images/figma.png';
+import skill8 from '../../../public/images/framer.png';
+import skill9 from '../../../public/images/mongodb.png';
+
+const skills = [
+  skill,
+  skill1,
+  skill2,
+  skill3,
+  skill4,
+  skill5,
+  skill6,
+  skill7,
+  skill8,
+  skill9,
+];
 
 interface Skill {
   name: string;
@@ -31,7 +57,7 @@ const otherSkills: Skill[] = [
 
 const Skills: NextPage = () => {
   return (
-    <section className="flex flex-col items-center justify-center py-20">
+    <section className="flex flex-col items-center justify-center py-20 px-6 md:px-20 z-[20]">
       <motion.h2
         initial="hidden"
         animate="visible"
@@ -40,14 +66,16 @@ const Skills: NextPage = () => {
       >
         Skills
       </motion.h2>
-      <div className="flex flex-wrap justify-center gap-12 px-6 md:px-20 w-full">
+
+      {/* Skill Bars */}
+      <div className="flex flex-wrap justify-around  px-6 md:px-20 w-full">
         {/* Programming Skills */}
-        <div className="flex flex-col items-center w-full md:w-1/4 p-4">
+        <div className="flex flex-col items-center w-full md:w-[400px] p-4">
           <motion.h3
             initial="hidden"
             animate="visible"
             variants={slideInFromLeft(0.4)}
-            className="text-2xl font-semibold mb-4 text-white"
+            className="text-2xl font-semibold mb-[3rem] text-white"
           >
             Programming Skills
           </motion.h3>
@@ -73,12 +101,12 @@ const Skills: NextPage = () => {
         </div>
 
         {/* Communication Skills */}
-        <div className="flex flex-col items-center w-full md:w-1/4 p-4">
+        <div className="flex flex-col items-center w-full md:w-[400px] p-4">
           <motion.h3
             initial="hidden"
             animate="visible"
             variants={slideInFromLeft(0.4)}
-            className="text-2xl font-semibold mb-4 text-white"
+            className="text-2xl font-semibold mb-[3rem] text-white"
           >
             Communication Skills
           </motion.h3>
@@ -104,12 +132,12 @@ const Skills: NextPage = () => {
         </div>
 
         {/* Other Skills */}
-        <div className="flex flex-col items-center w-full md:w-1/4 p-4">
+        <div className="flex flex-col items-center w-full md:w-[400px] p-4">
           <motion.h3
             initial="hidden"
             animate="visible"
             variants={slideInFromRight(0.4)}
-            className="text-2xl font-semibold mb-4 text-white"
+            className="text-2xl font-semibold mb-[3rem] text-white"
           >
             Other Skills
           </motion.h3>
@@ -133,6 +161,54 @@ const Skills: NextPage = () => {
             </motion.div>
           ))}
         </div>
+      </div>
+
+      {/* Skill Images */}
+      <div className="w-full overflow-hidden mt-10">
+        <motion.div
+          className="flex space-x-12 animate-scroll"
+          initial={{ x: 0 }}
+          animate={{ x: '-100%' }}
+          transition={{
+            repeat: Infinity,
+            repeatType: 'loop',
+            duration: 15,
+            ease: 'linear',
+          }}
+        >
+          {skills.map((skill, index) => (
+            <Image
+              key={index}
+              src={skill}
+              alt={`Skill ${index + 1}`}
+              className="w-[100px] h-[100px]"
+            />
+          ))}
+          {skills.map((skill, index) => (
+            <Image
+              key={index + skills.length}
+              src={skill}
+              alt={`Skill ${index + skills.length + 1}`}
+              className="w-[100px] h-[100px]"
+            />
+          ))}
+          {skills.map((skill, index) => (
+            <Image
+              key={index + skills.length}
+              src={skill}
+              alt={`Skill ${index + skills.length + 1}`}
+              className="w-[100px] h-[100px]"
+            />
+          ))}
+          {skills.map((skill, index) => (
+            <Image
+              key={index + skills.length}
+              src={skill}
+              alt={`Skill ${index + skills.length + 1}`}
+              className="w-[100px] h-[100px]"
+            />
+          ))}
+        </motion.div>
       </div>
     </section>
   );
