@@ -8,7 +8,7 @@ import {
 } from '../../utils/motion';
 import { SparklesIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
-import mainIcon from '../../../public/images/mainIconsdark.svg';
+import mainIcon from '../../../public/icons/mainIconsdark.svg';
 
 interface Props {}
 const Hero: NextPage<Props> = ({}) => {
@@ -20,7 +20,7 @@ const Hero: NextPage<Props> = ({}) => {
         loop
         className="rotate-180 absolute top-[-400px] left-0 z-[1] w-full h-full object-cover"
       >
-        <source src="/blackhole.webm" type="video/webm" />
+        <source src="/videos/blackhole.webm" type="video/webm" />
       </video>
       <motion.div
         initial="hidden"
