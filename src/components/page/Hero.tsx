@@ -13,7 +13,7 @@ import mainIcon from '../../../public/icons/mainIconsdark.svg';
 interface Props {}
 const Hero: NextPage<Props> = ({}) => {
   return (
-    <div className="relative flex flex-col h-screen w-full">
+    <div className="relative flex flex-col w-full">
       <video
         autoPlay
         muted
@@ -25,7 +25,7 @@ const Hero: NextPage<Props> = ({}) => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex md:flex-row  flex-col items-center justify-center px-20 mt-40 z-[20]"
+        className="flex md:flex-row  flex-col items-center justify-center px-6 md:px-20 mt-40 z-[20]"
       >
         <div className="flex flex-col gap-5 justify-center items-center h-full w-full mt-20 md:ml-[3rem] md:items-start">
           <motion.div
@@ -53,7 +53,7 @@ const Hero: NextPage<Props> = ({}) => {
 
           <motion.p
             variants={slideInFromLeft(0.8)}
-            className=" text-lg md:text-justify text-center text-gray-300 my-5 max-w-[550px]"
+            className="md:text-xl text-lg md:text-justify text-center text-gray-300 my-5 max-w-[550px]"
           >
             I&apos;m a Full Stack Developer with experience in website, and
             software development. Check out my projects and skills. Now a days I
@@ -69,7 +69,7 @@ const Hero: NextPage<Props> = ({}) => {
         </div>
         <motion.div
           variants={slideInFromRight(0.8)}
-          className="md:w-full w-[400px] h-full flex justify-center items-center"
+          className="md:w-full w-[400px] h-full md:flex justify-center items-center hidden"
         >
           <Image src={mainIcon} alt="work icons" height={750} width={750} />
         </motion.div>
