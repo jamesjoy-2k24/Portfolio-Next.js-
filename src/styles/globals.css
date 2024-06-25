@@ -8,10 +8,6 @@
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .Welcome-text {
   background: linear-gradient(
       0deg,
