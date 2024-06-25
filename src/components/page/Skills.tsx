@@ -85,7 +85,7 @@ const Skills: NextPage = () => {
             initial="hidden"
             animate="visible"
             variants={slideInFromLeft(0.4)}
-            className="text-2xl font-semibold mb-[3rem] text-white"
+            className="text-2xl font-semibold mb-[3rem] text-white text-center"
           >
             Programming Skills
           </motion.h3>
@@ -116,7 +116,7 @@ const Skills: NextPage = () => {
             initial="hidden"
             animate="visible"
             variants={slideInFromLeft(0.4)}
-            className="text-2xl font-semibold mb-[3rem] text-white"
+            className="text-2xl font-semibold mb-[3rem] text-white text-center"
           >
             Communication Skills
           </motion.h3>
@@ -147,7 +147,7 @@ const Skills: NextPage = () => {
             initial="hidden"
             animate="visible"
             variants={slideInFromRight(0.4)}
-            className="text-2xl font-semibold mb-[3rem] text-white"
+            className="text-2xl font-semibold mb-[3rem] text-white text-center"
           >
             Other Skills
           </motion.h3>

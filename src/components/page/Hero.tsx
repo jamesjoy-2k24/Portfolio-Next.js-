@@ -18,7 +18,7 @@ const Hero: NextPage<Props> = ({}) => {
         autoPlay
         muted
         loop
-        className="rotate-180 absolute top-[-400px] left-0 z-[1] w-full h-full object-cover"
+        className="rotate-180 absolute md:top-[-400px] top-[-300px] left-0 z-[1] w-full h-full object-cover"
       >
         <source src="/videos/blackhole.webm" type="video/webm" />
       </video>

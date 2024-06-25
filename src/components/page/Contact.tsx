@@ -55,10 +55,7 @@ const Contact: NextPage = () => {
           variants={slideInFromRight(0.3)}
           className="mt-8 flex flex-wrap items-center justify-around"
         >
-          <form
-            onSubmit={handleSubmit}
-            className="w-full max-w-xl  p-8 rounded-l-lg "
-          >
+          <form onSubmit={handleSubmit} className="w-full max-w-xl  p-8">
             <div className="mb-4">
               <label
                 className="block text-white text-sm font-bold mb-2"
@@ -144,10 +141,8 @@ const Contact: NextPage = () => {
           >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1178.4541078512034!2d80.36489650352419!3d8.649421009812022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afc46b547104c8f%3A0xe2a3d3b1d77c531c!2sPeriyapuliyalankulam!5e0!3m2!1sen!2slk!4v1719310302147!5m2!1sen!2slk"
-              width="600"
-              height="500"
               loading="lazy"
-              className="rounded-lg"
+              className=" w-full max-w-xl h-[500px]"
             ></iframe>
           </motion.div>
         </motion.div>

@@ -32,27 +32,18 @@ const About: NextPage<Props> = ({}) => {
           <h2 className="text-4xl font-bold mb-6 text-white md:text-start text-center mt-[3rem]">
             About Me
           </h2>
-          <p className="md:text-xl text-lg text-gray-300 text-justify mb-4 max-w-[550px] gap-5">
+          <p className="md:text-xl text-lg text-gray-300 text-justify  max-w-[550px] gap-5">
             As a dedicated and driven{' '}
             <span className="text-cyan-400 ">Full Stack Developer</span>, I
             bring a wealth of experience in designing and building web
-            applications with the latest modern technologies. My passion lies in
-            continuously expanding my skill set and staying abreast of the
-            ever-evolving trends within the tech industry. With a keen eye for
-            detail and a commitment to delivering high-quality solutions, I
-            thrive on tackling complex challenges and turning innovative ideas
-            into reality.
-          </p>
-          <p className="text-xl text-gray-300 text-justify max-w-[550px]">
-            My technical expertise encompasses a wide range of technologies
-            including{' '}
+            applications with the latest modern technologies{' '}
             <span className="text-cyan-400">
               JavaScript, React, Next.js, Node.js, Express.js{' '}
             </span>
-            and more. In addition to my core competencies, I am actively delving
-            into the field of cybersecurity, seeking to broaden my knowledge and
-            enhance my skill set through various online resources and
-            certifications. My goal is to integrate robust security measures
+            . My passion is continuously expanding my skill set. I am actively
+            delving into the field of cybersecurity, seeking to broaden my
+            knowledge and enhance my skill set through various online resources
+            and certifications. My goal is to integrate robust security measures
             into my development practices, ensuring the creation of secure and
             resilient applications.
           </p>
