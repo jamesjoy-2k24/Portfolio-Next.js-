@@ -43,7 +43,7 @@ const Footer: NextPage = () => {
             <h2 className="text-2xl hover:text-white hover:scale-110 duration-300 font-bold text-white">
               Stay Connected
             </h2>
-            <p className="text-gray-300">
+            <p className="text-gray-300 text-center">
               Follow me on my social media channels and get in touch!
             </p>
             <div className="flex text-lg text-white">
