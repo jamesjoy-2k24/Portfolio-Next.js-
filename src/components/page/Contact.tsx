@@ -61,7 +61,7 @@ const Contact: NextPage = () => {
           >
             <div className="mb-4">
               <label
-                className="block text-gray-300 text-sm font-bold mb-2"
+                className="block text-white text-sm font-bold mb-2"
                 htmlFor="name"
               >
                 Name
@@ -72,13 +72,13 @@ const Contact: NextPage = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full p-2 text-gray-900 rounded-md"
+                className="w-full p-2 text-gray-900 rounded-md bg-white bg-opacity-30"
                 required
               />
             </div>
             <div className="mb-4">
               <label
-                className="block text-gray-300 text-sm font-bold mb-2"
+                className="block text-white text-sm font-bold mb-2"
                 htmlFor="email"
               >
                 Email
@@ -89,13 +89,13 @@ const Contact: NextPage = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-2 text-gray-900 rounded-md"
+                className="w-full p-2 text-gray-900 rounded-md bg-white bg-opacity-30"
                 required
               />
             </div>
             <div className="mb-4">
               <label
-                className="block text-gray-300 text-sm font-bold mb-2"
+                className="block text-white text-sm font-bold mb-2"
                 htmlFor="subject"
               >
                 Subject
@@ -106,7 +106,7 @@ const Contact: NextPage = () => {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full p-2 text-gray-900 rounded-md"
+                className="w-full p-2 text-gray-900 rounded-md bg-white bg-opacity-30"
                 required
               />
             </div>
@@ -122,7 +122,7 @@ const Contact: NextPage = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-2 text-gray-900 rounded-md"
+                className="w-full p-2 text-gray-900 rounded-md bg-white bg-opacity-30"
                 rows={5}
                 required
               />

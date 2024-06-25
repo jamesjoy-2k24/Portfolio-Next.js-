@@ -8,7 +8,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
   return (
     <button
-      className="px-6 py-2 text-center font-semibold text-white shadow-md shadow-fuchsia-600 rounded hover:bg-gradient-to-r from-purple-700 to-black "
+      className="px-6 py-2 text-center font-semibold text-white shadow-md shadow-fuchsia-600 rounded hover:bg-gradient-to-r from-fuchsia-600 to-black "
       onClick={onClick}
       type="submit"
     >
