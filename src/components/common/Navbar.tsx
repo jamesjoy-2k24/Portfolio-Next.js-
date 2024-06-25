@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { slideInFromTop } from '../../utils/motion';
@@ -9,7 +10,7 @@ import {
   BsList,
   BsX,
 } from 'react-icons/bs';
-import Link from 'next/link';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,18 +30,25 @@ const Navbar = () => {
           variants={slideInFromTop(0.3)}
           className="text-white font-bold text-lg"
         >
-          <div>James Joy</div>
+          <div onClick={() => scroll.scrollToTop()}>James Joy</div>
         </motion.div>
 
         <div className="hidden md:flex gap-10 bg-black bg-opacity-50 ml-[5rem] font-bold p-2 px-6 rounded-3xl">
-          {['Home', 'About', 'Contact', 'Projects'].map((item, index) => (
+          {['Home', 'About', 'Projects', 'Contact'].map((item, index) => (
             <motion.div
               key={index}
               variants={slideInFromTop(0.4 + index * 0.1)}
             >
-              <Link href={`/${item.toLowerCase()}`}>
-                <span className="hover:text-white cursor-pointer">{item}</span>
-              </Link>
+              <ScrollLink
+                to={item.toLowerCase()}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="hover:text-white cursor-pointer"
+              >
+                {item}
+              </ScrollLink>
             </motion.div>
           ))}
         </div>
@@ -84,14 +92,17 @@ const Navbar = () => {
               key={index}
               variants={slideInFromTop(0.4 + index * 0.1)}
             >
-              <Link href={`/${item.toLowerCase()}`}>
-                <span
-                  onClick={handleToggleMenu}
-                  className="text-lg hover:text-white cursor-pointer"
-                >
-                  {item}
-                </span>
-              </Link>
+              <ScrollLink
+                to={item.toLowerCase()}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="text-lg hover:text-white cursor-pointer"
+                onClick={handleToggleMenu}
+              >
+                {item}
+              </ScrollLink>
             </motion.div>
           ))}
         </motion.div>

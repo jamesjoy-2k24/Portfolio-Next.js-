@@ -29,8 +29,11 @@ const Contact: NextPage = () => {
   };
 
   return (
-    <div className="container mx-auto py-20 md:px-20 px-6 z-[20]">
-      <section className="text-center">
+    <section
+      id="contact"
+      className="container mx-auto py-32 md:px-20 px-6 z-[20]"
+    >
+      <div className="text-center">
         <div className="font-extrabold flex flex-col">
           <motion.h2
             initial="hidden"
@@ -55,7 +58,7 @@ const Contact: NextPage = () => {
           variants={slideInFromRight(0.3)}
           className="mt-8 flex flex-wrap items-center justify-around"
         >
-          <form onSubmit={handleSubmit} className="w-full max-w-xl  p-8">
+          <form onSubmit={handleSubmit} className="w-full max-w-xl p-8">
             <div className="mb-4">
               <label
                 className="block text-white text-sm font-bold mb-2"
@@ -146,8 +149,8 @@ const Contact: NextPage = () => {
             ></iframe>
           </motion.div>
         </motion.div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

@@ -113,8 +113,8 @@ const Projects: NextPage = () => {
   );
 
   return (
-    <div className="md:px-20 px-6 mx-auto z-[20]">
-      <section className="text-center">
+    <section id='projects' className="md:px-20 px-6 mx-auto z-[20] py-20">
+      <div className="text-center">
         <div className="font-extrabold flex flex-col">
           <motion.h2
             initial="hidden"
@@ -143,8 +143,8 @@ const Projects: NextPage = () => {
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

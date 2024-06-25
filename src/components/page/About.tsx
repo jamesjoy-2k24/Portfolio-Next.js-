@@ -9,7 +9,7 @@ interface Props {}
 
 const About: NextPage<Props> = ({}) => {
   return (
-    <section className="flex flex-col w-full mb-[2rem]">
+    <section id="about" className="flex flex-col w-full min-h-[60vh] justify-center">
       <motion.div
         initial="hidden"
         animate="visible"
