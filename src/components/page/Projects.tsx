@@ -113,7 +113,7 @@ const Projects: NextPage = () => {
   );
 
   return (
-    <div className="container mx-auto py-20 z-[20]">
+    <div className="md:px-20 px-6 mx-auto z-[20]">
       <section className="text-center">
         <div className="font-extrabold flex flex-col">
           <motion.h2
