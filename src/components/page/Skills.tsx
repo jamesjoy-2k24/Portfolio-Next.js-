@@ -28,6 +28,16 @@ const skills = [
   skill7,
   skill8,
   skill9,
+  skill,
+  skill1,
+  skill2,
+  skill3,
+  skill4,
+  skill5,
+  skill6,
+  skill7,
+  skill8,
+  skill9,
 ];
 
 interface Skill {
@@ -164,7 +174,7 @@ const Skills: NextPage = () => {
       </div>
 
       {/* Skill Images */}
-      <div className="w-full overflow-hidden mt-10">
+      <div className="w-full overflow-hidden mt-10 md:px-20 px-6">
         <motion.div
           className="flex space-x-12 animate-scroll"
           initial={{ x: 0 }}
